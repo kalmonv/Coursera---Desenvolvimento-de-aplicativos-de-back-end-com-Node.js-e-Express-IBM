@@ -1,0 +1,91 @@
+{
+    "info": {
+      "name": "Bookstore API Tests",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get all books",
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/books"
+        }
+      },
+      {
+        "name": "Get book by ISBN",
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/books/isbn/9780132350884"
+        }
+      },
+      {
+        "name": "Get books by author",
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/books/author/Robert C. Martin"
+        }
+      },
+      {
+        "name": "Get books by title",
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/books/title/Clean Code"
+        }
+      },
+      {
+        "name": "Get book reviews",
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/books/review/9780132350884"
+        }
+      },
+      {
+        "name": "Register new user",
+        "request": {
+          "method": "POST",
+          "header": [{ "key": "Content-Type", "value": "application/json" }],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"username\": \"joao\", \"password\": \"1234\"}"
+          },
+          "url": "http://localhost:3000/register"
+        }
+      },
+      {
+        "name": "Login user",
+        "request": {
+          "method": "POST",
+          "header": [{ "key": "Content-Type", "value": "application/json" }],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"username\": \"joao\", \"password\": \"1234\"}"
+          },
+          "url": "http://localhost:3000/login"
+        }
+      },
+      {
+        "name": "Add or update review",
+        "request": {
+          "method": "PUT",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" },
+            { "key": "username", "value": "joao" }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"review\": \"Excelente leitura para desenvolvedores.\"}"
+          },
+          "url": "http://localhost:3000/auth/review/9780132350884"
+        }
+      },
+      {
+        "name": "Delete review",
+        "request": {
+          "method": "DELETE",
+          "header": [{ "key": "username", "value": "joao" }],
+          "url": "http://localhost:3000/auth/review/9780132350884"
+        }
+      }
+    ]
+  }
+  
