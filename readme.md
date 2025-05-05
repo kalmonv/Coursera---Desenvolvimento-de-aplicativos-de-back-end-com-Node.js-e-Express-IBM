@@ -13,28 +13,8 @@ Este é um projeto desenvolvido como parte do curso **"Desenvolvimento de aplica
 - Registrar novo usuário
 - Fazer login como usuário registrado
 
-### 🔐 Usuários Registrados (autenticados)
-- Adicionar ou modificar uma resenha de livro
-- Excluir a própria resenha de livro
-
 ### ⚙️ Métodos com Axios (Async/Await ou Promises)
 - Obter todos os livros (callback assíncrono)
 - Pesquisar por ISBN (promessa)
 - Pesquisar por autor
 - Pesquisar por título
-
-## 🧰 Tecnologias Utilizadas
-
-- Node.js
-- Express
-- Axios
-- JavaScript (ES6+)
-- JSON como base de dados simulada
-- Middleware para autenticação (opcional)
-
-## 📦 Instalação
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-npm install
